@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet, RouterLinkWithHref } from '@angular/router';
+import { Tabs } from "./core/components/tabs/tabs";
+import { Perfil } from "./pages/perfil/perfil";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLinkWithHref],
+  imports: [RouterOutlet, RouterLinkWithHref, Tabs, Perfil],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
